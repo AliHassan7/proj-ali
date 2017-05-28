@@ -67,3 +67,30 @@ p:last-child,
     margin-top: 0;
   }
 }
+header#navbar {
+  border: none;
+  background: none;
+}
+div#hero {
+  background-image: url("../images/venice.jpg");
+  background-repeat: no-repeat;
+  height: 468px;
+  background-size: cover;
+  background-position: 50%;
+}
+body {
+  margin-top: 0;
+}
+nav#block-alitheme-main-menu a {
+  color: #FFFFFF;
+  width: 115px;
+  background-color: #000000;
+  text-align: center;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 300;
+}
+div.navbar-header {
+  float: right;
+  margin-top: 25px;
+}
