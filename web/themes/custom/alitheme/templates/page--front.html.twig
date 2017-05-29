@@ -57,8 +57,7 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-<div class="row">
-  <div class="col-md-12" id="hero">
+<div class="row" id="hero">
     <div class="col-md-3 name col-md-offset-1"><h2>Ali <span>Hassan</span></h2></div>
     {# Navbar #}
     {% if page.navigation or page.navigation_collapsible %}
@@ -100,8 +99,6 @@
       {% endblock %}
     {% endif %}
   <div>
-<div>
-
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">

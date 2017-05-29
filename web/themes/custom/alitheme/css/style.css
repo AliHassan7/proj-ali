@@ -6364,7 +6364,8 @@ div#hero {
   background-repeat: no-repeat;
   height: 468px;
   background-size: cover;
-  background-position: 50%; }
+  background-position: 50%;
+  margin: 0; }
 
 body {
   margin-top: 0; }
@@ -6378,9 +6379,17 @@ nav#block-alitheme-main-menu a {
   background-color: rgba(0, 0, 0, 0.7);
   font-weight: 300; }
 
+nav#block-alitheme-main-menu a:hover {
+  background-color: rgba(226, 100, 38, 0.7);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease; }
+
 div.navbar-header {
-  float: right;
-  margin-top: 25px; }
+  margin-top: 25px;
+  width: 50%;
+  float: right; }
 
 div.name h2 {
   margin-top: 0;
@@ -6396,5 +6405,16 @@ div.name span {
 div.name {
   padding-top: 30px;
   z-index: 1; }
+
+section#block-socialmediablock li {
+  list-style-type: none;
+  display: inline-block; }
+
+section#block-socialmediablock {
+  display: inline-block;
+  margin-top: 4px; }
+
+#block-alitheme-main-menu ul {
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
