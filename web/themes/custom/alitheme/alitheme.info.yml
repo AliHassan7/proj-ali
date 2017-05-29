@@ -22,3 +22,4 @@ regions:
 libraries:
   - 'alitheme/global-styling'
   - 'alitheme/bootstrap-scripts'
+  - 'alitheme/global-scripts'

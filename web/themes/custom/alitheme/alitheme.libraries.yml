@@ -3,6 +3,13 @@ global-styling:
     theme:
       css/style.css: {}
 
+global-scripts:
+  version: VERSION
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+
 bootstrap-scripts:
   js:
     bootstrap/assets/javascripts/bootstrap/affix.js: {}
