@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ali_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ali_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ali_core module.
+    case 'help.page.ali_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module containing blocks and other functionality for Ali&#039;s website.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

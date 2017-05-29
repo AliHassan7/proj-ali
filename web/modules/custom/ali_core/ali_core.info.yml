@@ -1,0 +1,5 @@
+name: Ali Core
+type: module
+description: Module containing blocks and other functionality for Ali's website.
+core: 8.x
+package: Custom
