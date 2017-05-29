@@ -1158,7 +1158,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.5.zip",
-                "reference": null,
+                "reference": "8.x-3.5",
                 "shasum": "569f8a243ad6a2e04a86123a0b2a594783a09860"
             },
             "require": {
