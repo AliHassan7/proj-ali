@@ -6382,4 +6382,19 @@ div.navbar-header {
   float: right;
   margin-top: 25px; }
 
+div.name h2 {
+  margin-top: 0;
+  color: #e26426;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 3px; }
+
+div.name span {
+  color: #ffffff; }
+
+div.name {
+  padding-top: 30px;
+  z-index: 1; }
+
 /*# sourceMappingURL=style.css.map */
