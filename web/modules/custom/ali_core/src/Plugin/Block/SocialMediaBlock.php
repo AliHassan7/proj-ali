@@ -22,9 +22,9 @@ class SocialMediaBlock extends BlockBase {
     $build['social_media_block']['#markup'] = '
           <div>
               <ul>
-                  <li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></li>
-                  <li><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></li>
-                  <li><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></li>
+                  <li><a href="https://www.linkedin.com/in/llalihassanll/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/JustDrupaling" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/loyaltyisfirst" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
               </ul>
           </div>
     ';

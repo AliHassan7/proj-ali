@@ -102,8 +102,6 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
-
       {# Header #}
       {% if page.header %}
         {% block header %}
@@ -112,6 +110,7 @@
           </div>
         {% endblock %}
       {% endif %}
+</div>
 
       {# Sidebar First #}
       {% if page.sidebar_first %}

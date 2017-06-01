@@ -32,10 +32,19 @@ ol, ul {
 
 // Footer.
 .footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
+  height: 70px;
+  line-height: 70px;
+  background-color: #181818;
+  width: 100%;
+}
+.footer p {
+  text-align: center;
+  color: #525252;
+  margin-bottom: 0;
+}
+
+.footer span {
+  color: #e26426;
 }
 
 // Paragraphs.
@@ -100,7 +109,7 @@ nav#block-alitheme-main-menu a:hover {
 }
 div.navbar-header {
   margin-top: 25px;
-  width: 50%;
+  width: 55%;
   float: right;
 }
 div.name h2 {
@@ -128,4 +137,16 @@ section#block-socialmediablock {
 }
 #block-alitheme-main-menu ul {
   margin: 0;
+}
+i {
+  background-color: #e26426;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+section#block-socialmediablock a {
+  color: inherit;
+}
+i:hover {
+  -webkit-filter: grayscale(100%);
 }
