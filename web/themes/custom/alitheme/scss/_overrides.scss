@@ -162,6 +162,9 @@ i:hover {
   div.navbar-header {
     width: 65%;
   }
+  div.nav-border {
+    border-bottom: 1px solid #c0bebe;
+  }
 }
 @media all and (max-width: 992px) {
   nav#block-alitheme-main-menu,
@@ -186,6 +189,28 @@ i:hover {
     width: 50%;
   }
 }
+@media all and (min-width: 479px) and (max-width: 992px) {
+  header div.navbar-header {
+    width: 30%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  header div.navbar-header {
+    width: 20%;
+  }
+  ul.mm-listview li {
+    width: 100%;
+    display: block;
+  }
+  div#off-canvas div#mobile-social {
+    margin-top: 190px;
+  }
+}
+@media all and (min-width: 1200px) {
+  div.navbar-header {
+    width: 55%;
+  }
+}
 div#off-canvas ul.menu a {
   padding: 25px 50px 25px 40px;
   border-bottom: 1px solid #333;
@@ -201,11 +226,11 @@ div#mobile-social li {
 div#mobile-social a {
   display: block;
   min-height: 21px;
-  background-position: 0 45%;
+  background-position: 15px 45%;
   background-repeat: no-repeat;
   text-decoration: none;
   color: #ffffff;
-  padding: 15px 40px;
+  padding: 15px 50px;
 }
 div#mobile-social {
   border-top: 10px #333 solid;
@@ -235,4 +260,10 @@ li.twitter a {
 li.instagram a {
   background-image: url(../images/instagram.png);
   background-size: 30px
+}
+section#block-responsivemenumobileicon {
+  margin-top: 9px;
+}
+div.mm-panels {
+  margin-left: -1px;
 }
