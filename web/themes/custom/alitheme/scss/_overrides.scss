@@ -17,6 +17,8 @@
 
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
+$orange: #e26426;
+$white: #ffffff;
 
 ol, ul {
   padding-left: 1.5em;
@@ -44,7 +46,7 @@ ol, ul {
 }
 
 .footer span {
-  color: #e26426;
+  color: $orange;
 }
 
 // Paragraphs.
@@ -92,9 +94,8 @@ body {
   margin-top: 0;
 }
 nav#block-alitheme-main-menu a {
-  color: #FFFFFF;
+  color: $white;
   width: 115px;
-  background-color: #000000;
   text-align: center;
   margin-right: 20px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -114,14 +115,15 @@ div.navbar-header {
 }
 div.name h2 {
   margin-top: 0;
-  color: #e26426;
+  color: $orange;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 2.5em;
   letter-spacing: 3px;
 }
-div.name span {
-  color: #ffffff;
+div.name span,
+div#hero-text h1 {
+  color: $white;
 }
 div.name {
   padding-top: 30px;
@@ -141,7 +143,7 @@ section#block-socialmediablock {
   margin: 0;
 }
 i {
-  background-color: #e26426;
+  background-color: $orange;
   padding: 5px;
   border-radius: 50%;
   margin-right: 15px;
@@ -214,7 +216,7 @@ i:hover {
 div#off-canvas ul.menu a {
   padding: 25px 50px 25px 40px;
   border-bottom: 1px solid #333;
-  color: #ffffff;
+  color: $white;
 }
 .mm-listview>li:not(.mm-divider):after {
   left: 0;
@@ -229,7 +231,7 @@ div#mobile-social a {
   background-position: 15px 45%;
   background-repeat: no-repeat;
   text-decoration: none;
-  color: #ffffff;
+  color: $white;
   padding: 15px 50px;
 }
 div#mobile-social {
@@ -266,4 +268,32 @@ section#block-responsivemenumobileicon {
 }
 div.mm-panels {
   margin-left: -1px;
+}
+div.navbar-header .responsive-menu-toggle-icon:before,
+.responsive-menu-toggle-icon:after,
+.responsive-menu-toggle-icon span.icon {
+  background-color: $orange;
+}
+div.navbar-header span.label {
+  color: $orange;
+}
+div#hero-text h1 {
+  font-family: -webkit-body;
+  font-size: 3.5em;
+}
+div#hero-text .btn {
+  background-color: rgba(191, 88, 41, 0.8);
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: $white;
+  padding: 15px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+div#hero-text a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
