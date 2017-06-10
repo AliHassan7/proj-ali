@@ -6595,7 +6595,8 @@ div.view-id-portfolio .views-row {
   padding-bottom: 20px; }
 
 div.view-id-portfolio {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 30px; }
 
 div.view-id-portfolio div.view-header {
   padding-bottom: 20px; }
@@ -6623,5 +6624,21 @@ div.views-field-field-technology-icon {
   position: absolute;
   top: -25px;
   left: -25px; }
+
+div.view-id-portfolio div.view-footer a {
+  background-color: rgba(191, 88, 41, 0.8);
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: #ffffff;
+  padding: 15px;
+  font-family: sans-serif;
+  text-transform: uppercase; }
+
+div.view-id-portfolio div.view-footer a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease; }
 
 /*# sourceMappingURL=style.css.map */
