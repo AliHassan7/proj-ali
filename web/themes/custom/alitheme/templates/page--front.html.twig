@@ -57,52 +57,58 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-<div class="row" id="hero">
-    <div class="col-md-3 name col-md-offset-1"><h2>Ali <span>Hassan</span></h2></div>
-    {# Navbar #}
-    {% if page.navigation or page.navigation_collapsible %}
-      {% block navbar %}
-        {%
-          set navbar_classes = [
-            'navbar',
-            theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
-            theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
-          ]
-        %}
-        <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-          {% if not navbar_attributes.hasClass(container) %}
-            <div class="{{ container }}">
-          {% endif %}
-          <div class="navbar-header">
-            {{ page.navigation }}
-            {# .btn-navbar is used as the toggle for collapsed navbar content #}
-            {% if page.navigation_collapsible %}
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            {% endif %}
-          </div>
 
-          {# Navigation (collapsible) #}
+<div id="hero">
+
+  <div class="col-md-3 name col-md-offset-1"><h2>Ali <span>Hassan</span></h2></div>
+
+{# Navbar #}
+{% if page.navigation or page.navigation_collapsible %}
+  {% block navbar %}
+    {%
+    set navbar_classes = [
+    'navbar',
+    theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
+    theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+    ]
+    %}
+    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+      {% if not navbar_attributes.hasClass(container) %}
+      <div class="{{ container }}">
+        {% endif %}
+        <div class="navbar-header">
+          {{ page.navigation }}
+          {# .btn-navbar is used as the toggle for collapsed navbar content #}
           {% if page.navigation_collapsible %}
-            <div id="navbar-collapse" class="navbar-collapse collapse">
-              {{ page.navigation_collapsible }}
-            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           {% endif %}
-          {% if not navbar_attributes.hasClass(container) %}
-            </div>
-          {% endif %}
-        </header>
-      {% endblock %}
-    {% endif %}
-  <div class="nav-border"></div>
-  <div>
+        </div>
+
+        {# Navigation (collapsible) #}
+        {% if page.navigation_collapsible %}
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            {{ page.navigation_collapsible }}
+          </div>
+        {% endif %}
+        {% if not navbar_attributes.hasClass(container) %}
+      </div>
+      {% endif %}
+    </header>
+  {% endblock %}
+{% endif %}
+
+</div>
+
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
+
       {# Header #}
       {% if page.header %}
         {% block header %}
@@ -111,13 +117,6 @@
           </div>
         {% endblock %}
       {% endif %}
-
-    <div id="hero-text">
-      <h1>Digital Development<br>& Design that is built<br>to last.</h1><br>
-      <a class="btn btn-default" href="/contact" role="button">Get a Quote on Your Project</a>
-    </div>
-
-</div>
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
@@ -130,12 +129,12 @@
 
       {# Content #}
       {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-        ]
+      set content_classes = [
+      page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+      page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+      page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+      page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+      ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
 
