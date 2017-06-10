@@ -19,6 +19,7 @@
 @import "jquery-ui/autocomplete";
 $orange: #e26426;
 $white: #ffffff;
+$purple: #382a3b;
 
 ol, ul {
   padding-left: 1.5em;
@@ -130,6 +131,7 @@ div.name {
   z-index: 1;
   display: inline-block;
   float: left;
+  margin-left: 10%;
 }
 section#block-socialmediablock li {
   list-style-type: none;
@@ -175,6 +177,25 @@ i:hover {
   }
   section#block-responsivemenumobileicon {
     display: block;
+  }
+  div.row div.view-id-portfolio .views-row {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  div.view-id-portfolio div.view-content {
+    width: 500px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  div.row div.views-field-field-technology-icon {
+    left: -5%;
+  }
+}
+@media all and (max-width: 550px) {
+  div.row div.views-field-field-technology-icon {
+    left: 3%;
   }
 }
 
@@ -277,6 +298,9 @@ div.navbar-header .responsive-menu-toggle-icon:before,
 div.navbar-header span.label {
   color: $orange;
 }
+div#hero-text {
+  margin-left: 10%;
+}
 div#hero-text h1 {
   font-family: -webkit-body;
   font-size: 3.5em;
@@ -296,4 +320,40 @@ div#hero-text a:hover {
   -moz-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
+}
+div.view-id-portfolio .views-row {
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  padding-bottom: 20px;
+}
+div.view-id-portfolio {
+  text-align: center;
+}
+div.view-id-portfolio div.view-header {
+  padding-bottom: 20px;
+}
+section.block-views-blockportfolio-block-1 {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: #f4f4f3;
+}
+div.view-id-portfolio h3:nth-child(1) {
+  color: #aaaaaa;
+  margin-bottom: 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+div.view-id-portfolio h3:nth-child(3) {
+  color: $purple;
+  margin-top: 0;
+  font-family: -webkit-body;
+  font-size: 2em;
+}
+div.views-field-field-technology-icon {
+  position: absolute;
+  top: -25px;
+  left: -25px;
 }
