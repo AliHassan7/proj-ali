@@ -27,6 +27,7 @@
         "drupal/panels": "^4.1",
         "drupal/responsive_menu": "^2.4",
         "drush/drush": "~8.0",
+        "symfony/dom-crawler": "2.8.13",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
     },
