@@ -6581,7 +6581,8 @@ div#hero-text .btn {
   font-family: sans-serif;
   text-transform: uppercase; }
 
-div#hero-text a:hover {
+div#hero-text a:hover,
+div.view-id-portfolio div.view-footer a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
@@ -6623,7 +6624,8 @@ div.view-id-portfolio h3:nth-child(3) {
 div.views-field-field-technology-icon {
   position: absolute;
   top: -25px;
-  left: -25px; }
+  left: -25px;
+  z-index: 1; }
 
 div.view-id-portfolio div.view-footer a {
   background-color: rgba(191, 88, 41, 0.8);
@@ -6634,11 +6636,31 @@ div.view-id-portfolio div.view-footer a {
   font-family: sans-serif;
   text-transform: uppercase; }
 
-div.view-id-portfolio div.view-footer a:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: background-color 0.4s ease;
-  -moz-transition: background-color 0.4s ease;
-  -o-transition: background-color 0.4s ease;
-  transition: background-color 0.4s ease; }
+div.view-id-portfolio .views-field-title {
+  opacity: 0;
+  transition: .5s ease; }
+
+div.view-id-portfolio .views-row:hover .views-field-title {
+  opacity: 1; }
+
+div.view-id-portfolio div.views-field-title span {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.views-field-field-homepage-teaser img {
+  -webkit-filter: brightness(100%); }
+
+.views-field-field-homepage-teaser img:hover {
+  -webkit-filter: brightness(40%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 /*# sourceMappingURL=style.css.map */
