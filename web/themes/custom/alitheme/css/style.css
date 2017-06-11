@@ -6460,7 +6460,7 @@ section#block-socialmediablock i:hover {
     padding-top: 20px; }
 
   div.view-testimonials .view-content div:nth-child(1) .views-field-title {
-    margin-top: 76px; }
+    margin-top: 102px; }
 
   div.view-testimonials .view-content div:nth-child(2) .views-field-title {
     margin-top: 38px; }
@@ -6497,7 +6497,17 @@ section#block-socialmediablock i:hover {
     width: 70%;
     margin: 0 auto;
     display: block;
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+
+  div.my-pic img {
+    width: 50%;
+    margin: 0 auto; }
+
+  div.skill-icons,
+  div.about,
+  div.skills,
+  h3.intro-text {
+    text-align: center; } }
 @media all and (max-width: 550px) {
   div.row div.views-field-field-technology-icon {
     left: 3%; } }
@@ -6693,8 +6703,7 @@ div.view-id-portfolio div.views-field-title span {
   transition: all 0.5s ease; }
 
 section.block-about-me i {
-  padding-right: 20px;
-  padding-bottom: 20px; }
+  padding-right: 20px; }
 
 i.fa-drupal:hover {
   color: #0678be; }
@@ -6729,7 +6738,13 @@ div.view-testimonials .views-row {
 
 .skills p,
 div.view-testimonials p {
-  color: #868686; }
+  color: #868686;
+  padding-top: 25px;
+  font-family: -webkit-body;
+  font-size: 1.1em; }
+
+div.row .skills p {
+  padding-top: 0; }
 
 .views-field-field-author-image {
   width: 100px;
@@ -6737,5 +6752,11 @@ div.view-testimonials p {
 
 div.view-testimonials .views-field-title span::before {
   content: "- "; }
+
+div.view-testimonials .view-content div.views-row:nth-child(1) i {
+  color: #e26426; }
+
+div.view-testimonials .view-content div.views-row:nth-child(2) i {
+  color: #ffae3f; }
 
 /*# sourceMappingURL=style.css.map */

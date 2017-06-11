@@ -13,6 +13,8 @@
 
             $('.intro img').hover(function(){
                 $(this).attr('src','themes/custom/alitheme/images/paint-ali.png');
+            },function(){
+                $(this).attr('src','themes/custom/alitheme/images/candid-ali.png');
             });
         }
     };

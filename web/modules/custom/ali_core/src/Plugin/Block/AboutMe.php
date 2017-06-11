@@ -21,14 +21,18 @@ class AboutMe extends BlockBase {
     $build = [];
     $build['about_me']['#markup'] = '
     <div class="row intro">
-        <div class="col-md-6 col-md-offset-1"><span class="about-title">About</span><br><h3 class="intro-text">Hi, I\'m Ali. A Drupal Developer, Photographer, Traveler, Videographer, and Nature Enthusiast.</h3> </div>
-
-        <div class="col-md-2 my-pic"><img src="../../../../../../themes/custom/alitheme/images/candid-ali.png" alt="Image of Ali" class="img-responsive"></div>
-
-        <div class="col-md-2">
-            <i class="fa fa-drupal fa-5x" aria-hidden="true"></i>
-            <i class="fa fa-wordpress fa-5x" aria-hidden="true"></i>
+        <div class="col-md-6 col-md-offset-1 about">
+            <span class="about-title">About</span>
+            <br><h3 class="intro-text">Hi, I\'m Ali. A Drupal Developer, Photographer, Traveler, Videographer, and Nature Enthusiast.</h3><br>
+            <div class="skill-icons">
+                <i class="fa fa-drupal fa-5x" aria-hidden="true"></i>
+                <i class="fa fa-wordpress fa-5x" aria-hidden="true"></i>
+                <i class="fa fa-camera-retro fa-5x" aria-hidden="true"></i>
+                <i class="fa fa-video-camera fa-5x" aria-hidden="true"></i>
+            </div>
         </div>
+
+        <div class="col-md-3 my-pic"><img src="../../../../../../themes/custom/alitheme/images/candid-ali.png" alt="Image of Ali" class="img-responsive"></div>
 
     </div>
 
