@@ -10,6 +10,10 @@
                 '<li class="twitter"><a href="https://twitter.com/JustDrupaling" target="_blank">Twitter</a></li>' +
                 '<li class="instagram"><a href="https://www.instagram.com/loyaltyisfirst" target="_blank">Instagram</a></li>' +
                 '</ul></div>').insertAfter(".mm-listview");
+
+            $('.intro img').hover(function(){
+                $(this).attr('src','themes/custom/alitheme/images/paint-ali.png');
+            });
         }
     };
 })(jQuery);
