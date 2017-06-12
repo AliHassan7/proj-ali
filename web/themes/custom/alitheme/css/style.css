@@ -6611,7 +6611,9 @@ div#hero-text h1 {
   font-family: -webkit-body;
   font-size: 3.5em; }
 
-div#hero-text .btn {
+div#hero-text .btn,
+div.view-id-portfolio div.view-footer a,
+section#block-worktogether a.btn {
   background-color: rgba(191, 88, 41, 0.8);
   border: 1px solid transparent;
   border-radius: inherit;
@@ -6621,6 +6623,7 @@ div#hero-text .btn {
   text-transform: uppercase; }
 
 div#hero-text a:hover,
+section#block-worktogether a.btn:hover,
 div.view-id-portfolio div.view-footer a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: background-color 0.4s ease;
@@ -6665,15 +6668,6 @@ div.views-field-field-technology-icon {
   top: -25px;
   left: -25px;
   z-index: 1; }
-
-div.view-id-portfolio div.view-footer a {
-  background-color: rgba(191, 88, 41, 0.8);
-  border: 1px solid transparent;
-  border-radius: inherit;
-  color: #ffffff;
-  padding: 15px;
-  font-family: sans-serif;
-  text-transform: uppercase; }
 
 div.view-id-portfolio .views-field-title {
   opacity: 0;
@@ -6758,5 +6752,16 @@ div.view-testimonials .view-content div.views-row:nth-child(1) i {
 
 div.view-testimonials .view-content div.views-row:nth-child(2) i {
   color: #ffae3f; }
+
+section#block-worktogether div.row {
+  background-color: #272727;
+  height: 200px;
+  line-height: 200px; }
+
+section#block-worktogether h3 {
+  color: #525252;
+  font-size: 3em;
+  font-family: -webkit-body;
+  line-height: 160px; }
 
 /*# sourceMappingURL=style.css.map */
