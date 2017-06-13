@@ -96,7 +96,7 @@ div#hero {
 body {
   margin-top: 0;
 }
-nav#block-alitheme-main-menu a {
+nav#block-mainnavigation a {
   color: $white;
   width: 115px;
   text-align: center;
@@ -104,7 +104,7 @@ nav#block-alitheme-main-menu a {
   background-color: rgba(0, 0, 0, 0.7);
   font-weight: 300;
 }
-nav#block-alitheme-main-menu a:hover {
+nav#block-mainnavigation a:hover {
   background-color: rgba(226, 100, 38, 0.7);
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
@@ -143,7 +143,7 @@ section#block-socialmediablock {
   display: inline-block;
   margin-top: 4px;
 }
-#block-alitheme-main-menu ul {
+#block-mainnavigation ul {
   margin: 0;
 }
 section#block-socialmediablock i {
@@ -178,7 +178,7 @@ section#block-socialmediablock i:hover {
     padding-top: 20px;
   }
   div.view-testimonials .view-content div:nth-child(1) .views-field-title {
-    margin-top: 102px;
+    margin-top: 80px;
   }
   div.view-testimonials .view-content div:nth-child(2) .views-field-title {
     margin-top: 38px;
@@ -192,7 +192,7 @@ section#block-socialmediablock i:hover {
   }
 }
 @media all and (max-width: 992px) {
-  nav#block-alitheme-main-menu,
+  nav#block-mainnavigation,
   section#block-socialmediablock {
     display: none;
   }
@@ -228,6 +228,13 @@ section#block-socialmediablock i:hover {
   div.skills,
   h3.intro-text {
     text-align: center;
+  }
+  div.row section#block-worktogether div.container-fluid div.row {
+    text-align: center;
+    padding: 40px;
+  }
+  div.row section#block-worktogether div.container-fluid div.row h3 {
+    padding-bottom: 10px;
   }
 }
 @media all and (max-width: 550px) {
@@ -493,12 +500,23 @@ div.view-testimonials .view-content div.views-row:nth-child(2) i {
 }
 section#block-worktogether div.row {
   background-color: #272727;
-  height: 200px;
-  line-height: 200px;
 }
 section#block-worktogether h3 {
   color: #525252;
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: -webkit-body;
-  line-height: 160px;
+  font-weight: 700;
+}
+body.user-logged-in div#mm-0 {
+  padding-top: 80px !important;
+}
+section#block-worktogether div.container-fluid {
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+}
+section#block-worktogether div.container-fluid div.row {
+  padding: 50px;
+}
+section#block-worktogether div.container-fluid div.row h3 {
+  margin: 0;
 }
