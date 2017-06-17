@@ -6367,8 +6367,13 @@ header#navbar {
   border: none;
   background: none; }
 
+body.path-frontpage div#hero {
+  background-image: url("../images/venice.jpg"); }
+
+body.page-node-type-portfolio-item div#hero {
+  background-image: url("../images/white-wall.jpg"); }
+
 div#hero {
-  background-image: url("../images/venice.jpg");
   background-repeat: no-repeat;
   height: 468px;
   background-size: cover;
@@ -6410,6 +6415,9 @@ div.name h2 {
 div.name span,
 div#hero-text h1 {
   color: #ffffff; }
+
+body.page-node-type-portfolio-item div.name span {
+  color: #e26426; }
 
 div.name {
   padding-top: 30px;
@@ -6478,7 +6486,17 @@ section#block-socialmediablock i:hover {
     padding-left: 70px; }
 
   div.view-id-portfolio .views-row {
-    padding-right: 20px; } }
+    padding-right: 20px; }
+
+  div.view-testimonials div.view-header h3 {
+    margin-right: 25px; }
+
+  div#border-nav {
+    height: 1px;
+    background-color: #c0bebe; }
+
+  div.view-testimonials div.view-header h3 {
+    margin-right: 25px; } }
 @media all and (max-width: 992px) {
   nav#block-mainnavigation,
   section#block-socialmediablock {
@@ -6548,9 +6566,15 @@ section#block-socialmediablock i:hover {
 
   div#off-canvas div#mobile-social {
     margin-top: 190px; } }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  div.view-testimonials .view-content div:nth-child(1) .views-field-title {
+    margin-top: 102px; } }
 @media all and (min-width: 1200px) {
   div.navbar-header {
     width: 55%; } }
+@media all and (min-width: 459px) {
+  div#hero-text {
+    padding-top: 40px; } }
 @media all and (max-width: 400px) {
   div#hero div.name h2 {
     margin-top: 7px;
@@ -6667,6 +6691,7 @@ div#mm-0 {
   background-color: #f4f4f3; }
 
 div.view-id-portfolio h3:nth-child(1),
+div.view-testimonials div.view-header h3,
 span.about-title {
   color: #aaaaaa;
   margin-bottom: 0;
@@ -6674,6 +6699,10 @@ span.about-title {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 1em; }
+
+div.view-testimonials div.view-header h3 {
+  text-align: center;
+  padding-bottom: 35px; }
 
 div.view-id-portfolio h3:nth-child(3),
 h3.intro-text {
@@ -6796,5 +6825,11 @@ section#block-worktogether div.container-fluid div.row h3 {
 
 div.view-testimonials {
   padding-bottom: 40px; }
+
+div.navbar-header {
+  display: none; }
+
+.hideme {
+  opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

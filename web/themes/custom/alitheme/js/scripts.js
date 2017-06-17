@@ -1,9 +1,10 @@
 (function ($) {
     Drupal.behaviors.myBehavior = {
-        attach: function (context, settings) {
-            //Fade in effect for the main menu on desktop view
-            $("#block-mainnavigation .nav a").hide();
-            $("#block-mainnavigation .nav a").fadeIn(3500);
+        attach: function (context, settings)
+        {
+            $( document ).ready(function() {
+                //Fade in effect for the main menu on desktop view
+            $(".navbar-header").slideDown(2000);
             //Social media block at the bottom of the responsive menu
             $('<div id="mobile-social"><ul>' +
                 '<li class="linkedin"><a href="https://www.linkedin.com/in/llalihassanll" target="_blank">LinkedIn</a></li>' +
@@ -15,6 +16,28 @@
                 $(this).attr('src','themes/custom/alitheme/images/paint-ali.png');
             },function(){
                 $(this).attr('src','themes/custom/alitheme/images/candid-ali.png');
+            });
+
+                $(window).scroll( function(){
+
+                    /* Check the location of each desired element */
+                    $('.hideme').each( function(i){
+
+                        var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                        /* If the object is completely visible in the window, fade it in */
+                        if( bottom_of_window > bottom_of_object ){
+
+                            $(this).animate({'opacity':'1'},1000);
+
+                        }
+
+                    });
+
+                });
+
+
             });
         }
     };

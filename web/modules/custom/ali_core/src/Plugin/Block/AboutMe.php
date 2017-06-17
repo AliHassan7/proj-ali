@@ -20,7 +20,7 @@ class AboutMe extends BlockBase {
   public function build() {
     $build = [];
     $build['about_me']['#markup'] = '
-    <div class="row intro">
+    <div class="row intro hideme">
         <div class="col-md-6 col-md-offset-1 about">
             <span class="about-title">About</span>
             <br><h3 class="intro-text">Hi, I\'m Ali. A Drupal Developer, Photographer, Traveler, Videographer, and Nature Enthusiast.</h3><br>
@@ -36,7 +36,7 @@ class AboutMe extends BlockBase {
 
     </div>
 
-    <div class="row skills">
+    <div class="row skills hideme">
         <div class="col-md-3 col-md-offset-1"><span class="about-title">Services/Skills</span><br>
             <ul>
                 <li>Drupal 7/8 Development</li>
