@@ -89,7 +89,7 @@ body.path-frontpage div#hero {
   background-image: url("../images/venice.jpg");
 }
 body.page-node-type-portfolio-item div#hero {
-  background-image: url("../images/white-wall.jpg");
+  background-image: url("../images/brick.jpg");
 }
 div#hero {
   background-repeat: no-repeat;
@@ -145,7 +145,8 @@ div.name {
   margin-left: 10%;
   position: absolute;
 }
-div.name a:hover {
+div.name a:hover,
+div.field--name-field-visit-website a:hover {
   text-decoration: none;
 }
 section#block-socialmediablock li {
@@ -217,6 +218,16 @@ section#block-socialmediablock i:hover {
     margin-right: 25px;
   }
 }
+@media screen and (min-width: 40em) {
+  .layout--twocol > .layout__region--first {
+    flex: 0 1 70% !important;
+  }
+  .layout--twocol > .layout__region--second {
+    flex: 0 1 30% !important;
+    padding-top: 225px;
+  }
+}
+
 @media all and (max-width: 992px) {
   nav#block-mainnavigation,
   section#block-socialmediablock {
@@ -407,6 +418,7 @@ section#block-worktogether a.btn {
 }
 div#hero-text a:hover,
 section#block-worktogether a.btn:hover,
+div.field--name-field-visit-website a:hover,
 div.view-id-portfolio div.view-footer a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: background-color 0.4s ease;
@@ -555,7 +567,8 @@ section#block-worktogether h3 {
 body.user-logged-in div#mm-0 {
   padding-top: 80px !important;
 }
-section#block-worktogether div.container-fluid {
+section#block-worktogether div.container-fluid,
+div#bg-overlay{
   margin-left: calc(50% - 50vw);
   width: 100vw;
 }
@@ -573,4 +586,57 @@ div.navbar-header {
 }
 .hideme {
   opacity: 0;
+}
+body.page-node-type-portfolio-item h1.page-header {
+  margin-top: -260px;
+  font-size: 3em;
+  color: $white;
+  text-align: center;
+  border: 0;
+}
+div.field--name-field-client-name {
+  padding-bottom: 30px;
+}
+div.field--name-field-desktop-image {
+  display: inline-block;
+  padding-top: 100px;
+}
+div.field--name-field-client-name div.field--label,
+div.field--name-field-visit-website a,
+div.field--name-field-technology-used div.field--label {
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 300;
+  padding-bottom: 3px;
+  letter-spacing: 2px;
+}
+html {
+  background-color: $orange;
+}
+div#bg-overlay {
+  background-color: $orange;
+  height: 340px;
+  margin-top: 185px;
+}
+article.portfolio-item {
+  position: relative;
+}
+//body.page-node-type-portfolio-item div.content {
+//  position: absolute;
+//  top: 0;
+//}
+div.field--name-field-client-name div.field--item,
+div.field--name-field-technology-used div.field--item {
+  color: $white;
+  font-size: 1.2em;
+}
+div.field--name-field-visit-website a {
+  border: 2px solid white;
+  padding: 10px;
+}
+div.field--name-field-visit-website {
+  padding-top: 70px;
+}
+body.s div.content {
+  margin-top: -500px;
 }
