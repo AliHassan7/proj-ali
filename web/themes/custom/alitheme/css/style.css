@@ -6548,7 +6548,10 @@ section#block-socialmediablock i:hover {
     padding: 40px; }
 
   div.row section#block-worktogether div.container-fluid div.row h3 {
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+
+  div.row div.field--name-field-mobile-image div:nth-child(2) {
+    padding-right: 0; } }
 @media all and (max-width: 550px) {
   div.row div.views-field-field-technology-icon {
     left: 3%; } }
@@ -6591,6 +6594,9 @@ section#block-socialmediablock i:hover {
   div.row section#block-worktogether div.container-fluid div.row {
     text-align: center;
     padding: 40px 5px; } }
+@media all and (max-width: 585px) {
+  div.row div.field--name-field-mobile-image div:nth-child(1) {
+    padding-right: 0; } }
 div#off-canvas ul.menu a {
   padding: 25px 50px 25px 40px;
   border-bottom: 1px solid #333;
@@ -6788,6 +6794,7 @@ div.view-testimonials .views-row {
   vertical-align: top; }
 
 .skills p,
+div.field--name-body p,
 div.view-testimonials p {
   color: #868686;
   padding-top: 25px;
@@ -6888,7 +6895,33 @@ div.field--name-field-visit-website a {
 div.field--name-field-visit-website {
   padding-top: 70px; }
 
-body.s div.content {
+body.page-node-type-portfolio-item div.content {
   margin-top: -500px; }
+
+body.page-node-type-portfolio-item div.field--name-body {
+  margin: 0 13%; }
+
+body.page-node-type-portfolio-item div.field--name-body div.field--label {
+  color: #382a3b;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 2px; }
+
+div.field--name-field-tablet-image img {
+  margin: 0 auto; }
+
+div.field--name-field-tablet-image,
+div.field--name-field-mobile-image {
+  padding-top: 50px; }
+
+div.field--name-field-mobile-image {
+  text-align: center; }
+
+div.field--name-field-mobile-image div.field--item {
+  display: inline-block; }
+
+div.field--name-field-mobile-image div:nth-child(1),
+div.field--name-field-mobile-image div:nth-child(2) {
+  padding-right: 50px; }
 
 /*# sourceMappingURL=style.css.map */

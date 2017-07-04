@@ -273,6 +273,9 @@ section#block-socialmediablock i:hover {
   div.row section#block-worktogether div.container-fluid div.row h3 {
     padding-bottom: 10px;
   }
+  div.row div.field--name-field-mobile-image div:nth-child(2) {
+    padding-right: 0;
+  }
 }
 @media all and (max-width: 550px) {
   div.row div.views-field-field-technology-icon {
@@ -332,6 +335,11 @@ section#block-socialmediablock i:hover {
   div.row section#block-worktogether div.container-fluid div.row {
     text-align: center;
     padding: 40px 5px;
+  }
+}
+@media all and (max-width: 585px) {
+  div.row div.field--name-field-mobile-image div:nth-child(1) {
+    padding-right: 0;
   }
 }
 div#off-canvas ul.menu a {
@@ -533,6 +541,7 @@ div.view-testimonials .views-row {
   vertical-align: top;
 }
 .skills p,
+div.field--name-body p,
 div.view-testimonials p {
   color: $dark_grey;
   padding-top: 25px;
@@ -621,10 +630,6 @@ div#bg-overlay {
 article.portfolio-item {
   position: relative;
 }
-//body.page-node-type-portfolio-item div.content {
-//  position: absolute;
-//  top: 0;
-//}
 div.field--name-field-client-name div.field--item,
 div.field--name-field-technology-used div.field--item {
   color: $white;
@@ -637,6 +642,32 @@ div.field--name-field-visit-website a {
 div.field--name-field-visit-website {
   padding-top: 70px;
 }
-body.s div.content {
+body.page-node-type-portfolio-item div.content {
   margin-top: -500px;
+}
+body.page-node-type-portfolio-item div.field--name-body {
+  margin: 0 13%;
+}
+body.page-node-type-portfolio-item div.field--name-body div.field--label {
+  color: $purple;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+div.field--name-field-tablet-image img {
+  margin: 0 auto;
+}
+div.field--name-field-tablet-image,
+div.field--name-field-mobile-image {
+  padding-top: 50px;
+}
+div.field--name-field-mobile-image {
+  text-align: center;
+}
+div.field--name-field-mobile-image div.field--item {
+  display: inline-block;
+}
+div.field--name-field-mobile-image div:nth-child(1),
+div.field--name-field-mobile-image div:nth-child(2) {
+  padding-right: 50px;
 }
