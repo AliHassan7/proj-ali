@@ -37,6 +37,9 @@
 
                 });
 
+                if ($('span.inactive').length) {
+                    $("ul.entity-pager-list").addClass("pager-last");
+                }
 
             });
         }
