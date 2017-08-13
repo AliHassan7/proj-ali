@@ -26,6 +26,7 @@
         "drupal/entity_pager": "^1.0@alpha",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.1",
+        "drupal/pathauto": "^1.0",
         "drupal/responsive_menu": "^2.4",
         "drush/drush": "~8.0",
         "symfony/dom-crawler": "2.8.13",
