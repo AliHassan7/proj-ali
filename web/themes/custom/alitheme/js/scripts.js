@@ -37,8 +37,12 @@
 
                 });
 
-                if ($('span.inactive').length) {
+                if ($('li.entity-pager-item-next span.inactive').length) {
                     $("ul.entity-pager-list").addClass("pager-last");
+                }
+
+                if ($('li.entity-pager-item-prev span.inactive').length) {
+                    $("ul.entity-pager-list").addClass("pager-first");
                 }
 
             });
