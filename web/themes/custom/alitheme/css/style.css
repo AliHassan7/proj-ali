@@ -6557,7 +6557,10 @@ section#block-socialmediablock i:hover {
     padding-bottom: 10px; } }
 @media all and (max-width: 550px) {
   div.row div.views-field-field-technology-icon {
-    left: 3%; } }
+    left: 3%; }
+
+  div.field--name-field-tablet-image {
+    padding: 0 5%; } }
 @media all and (max-width: 478px) {
   div.navbar-header {
     width: 40%; } }
@@ -7039,9 +7042,27 @@ body.page-node-type-portfolio-item div.row div.field--name-body {
     width: 450px; }
 
   body.page-node-type-portfolio-item div.row div.field--name-body {
-    padding-top: 100px; } }
+    padding-top: 65px; } }
 @media all and (min-width: 658px) and (max-width: 991px) {
   body.page-node-type-portfolio-item div.row div.content div.field--name-body {
-    padding-top: 100px; } }
+    padding-top: 140px; } }
+@media all and (min-width: 640px) and (max-width: 1085px) {
+  body.page-node-type-portfolio-item div.row div.field--name-body {
+    padding-top: 110px; } }
+@media all and (min-width: 506px) and (max-width: 811px) {
+  body.page-node-type-portfolio-item div.content {
+    background-position-y: 7%; } }
+@media all and (max-width: 505px) {
+  body.page-node-type-portfolio-item div.content {
+    background-position-y: 6%; } }
+@media all and (max-width: 639px) {
+  body.page-node-type-portfolio-item .layout__region--second {
+    padding-left: 10%; } }
+@media all and (min-width: 425px) and (max-width: 639px) {
+  div.field--name-field-visit-website {
+    padding-top: 50px;
+    margin-top: -10px; } }
+div.name a:focus {
+  color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
