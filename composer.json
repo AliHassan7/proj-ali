@@ -24,6 +24,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drupal/entity_pager": "^1.0@alpha",
+        "drupal/extlink": "^1.0",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.1",
         "drupal/pathauto": "^1.0",
