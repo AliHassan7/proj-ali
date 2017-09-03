@@ -322,6 +322,9 @@ section#block-socialmediablock i:hover {
   div.view-testimonials .view-content div:nth-child(1) .views-field-title {
     margin-top: 102px;
   }
+  body.page-node-type-portfolio-item div.row div.field--name-body {
+    padding-top: 65px;
+  }
 }
 @media all and (min-width: 1200px) {
   div.navbar-header {
@@ -332,6 +335,9 @@ section#block-socialmediablock i:hover {
   }
   div.row section#block-views-block-pager-block-1 ul.pager-first {
     margin-bottom: -34px;
+  }
+  body.page-node-type-portfolio-item div.row div.field--name-body {
+    padding-top: 50px;
   }
 }
 @media all and (min-width: 459px) {
@@ -660,10 +666,7 @@ div.field--name-field-visit-website {
   padding-top: 70px;
 }
 body.page-node-type-portfolio-item div.content {
-  background: url("../images/orange-bg.jpg") 100% 10%;
-  background-repeat: repeat-x;
-  margin-left: calc(50% - 50vw);
-  width: 100vw;
+  margin-top: -525px;
 }
 body.page-node-type-portfolio-item div.field--name-body {
   margin: 0 13%;
@@ -784,10 +787,6 @@ section#block-views-block-pager-block-1 ul.pager-last li.entity-pager-item {
 article {
   padding-bottom: 50px;
 }
-body.page-node-type-portfolio-item div.row div.field--name-body {
-  padding-top: 50px;
-}
-
 @media all and (max-width: 639px) {
   body div#bg-overlay {
     height: 450px;
@@ -795,42 +794,28 @@ body.page-node-type-portfolio-item div.row div.field--name-body {
   div.field--name-field-desktop-image img {
     width: 450px;
   }
-  body.page-node-type-portfolio-item div.row div.field--name-body {
-    padding-top: 65px;
+  body.page-node-type-portfolio-item .layout__region--second {
+    padding-left: 10%;
+  }
+  body.page-node-type-portfolio-item div.content {
+    margin-top: -610px;
   }
 }
 @media all and (min-width: 658px) and (max-width: 991px) {
   body.page-node-type-portfolio-item div.row div.content div.field--name-body {
-    padding-top: 140px;
-  }
-}
-
-@media all and (min-width: 640px) and (max-width: 1085px) {
-  body.page-node-type-portfolio-item div.row div.field--name-body {
-    padding-top: 110px;
-  }
-}
-@media all and (min-width: 506px) and (max-width: 811px) {
-  body.page-node-type-portfolio-item div.content {
-    background-position-y: 7%;
-  }
-}
-@media all and (max-width: 505px) {
-  body.page-node-type-portfolio-item div.content {
-    background-position-y: 6%;
-  }
-}
-@media all and (max-width: 639px){
-  body.page-node-type-portfolio-item .layout__region--second {
-    padding-left: 10%;
-  }
-}
-@media all and (min-width: 425px) and (max-width: 639px) {
-  div.field--name-field-visit-website {
-    padding-top: 50px;
-    margin-top: -10px;
+    padding-top: 100px;
   }
 }
 div.name a:focus {
   color: transparent;
+}
+@media all and (max-width: 657px) {
+  body.page-node-type-portfolio-item div.row div.field--name-body {
+    padding-top: 65px;
+  }
+}
+@media all and (max-width: 657px) {
+  body.page-node-type-portfolio-item div.row div.field--name-body {
+    padding-top: 100px !important;
+  }
 }

@@ -29,7 +29,7 @@
                         /* If the object is completely visible in the window, fade it in */
                         if( bottom_of_window > bottom_of_object ){
 
-                            $(this).animate({'opacity':'1'},500);
+                            $(this).animate({'opacity':'1'},1000);
 
                         }
 
@@ -44,6 +44,8 @@
                 if ($('li.entity-pager-item-prev span.inactive').length) {
                     $("ul.entity-pager-list").addClass("pager-first");
                 }
+
+                $(".field--name-body, .field--name-field-tablet-image, .field--name-field-mobile-image, #block-views-block-pager-block-1, #block-worktogether, footer").addClass("hideme");
 
             });
         }
