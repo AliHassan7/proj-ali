@@ -57,7 +57,10 @@
 <!DOCTYPE html>
 <html {{ html_attributes }}>
   <head>
-    <script src="https://use.fontawesome.com/eb74db1718.js"></script><head-placeholder token="{{ placeholder_token|raw }}">
+    <script src="https://use.fontawesome.com/eb74db1718.js"></script>
+    <script src="../../../../libraries/mmenu/jquery.mmenu.all.js" type="text/javascript"></script>
+    <link href="../../../../libraries/mmenu/jquery.mmenu.all.css" type="text/css" rel="stylesheet" />
+    <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
