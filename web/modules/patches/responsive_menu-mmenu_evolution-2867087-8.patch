@@ -1,0 +1,29 @@
+From e2bb938d5c771c0a5381f6c295fbded29b14fa8e Mon Sep 17 00:00:00 2001
+From: Florent Torregrosa <florent.torregrosa@gmail.com>
+Date: Sun, 28 May 2017 12:09:30 +0200
+Subject: [PATCH] Issue #2867087: Fix libraries declaration for mmenu 6.1.0.
+
+---
+ responsive_menu.libraries.yml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/responsive_menu.libraries.yml b/responsive_menu.libraries.yml
+index 3539569..c0990e6 100644
+--- a/responsive_menu.libraries.yml
++++ b/responsive_menu.libraries.yml
+@@ -8,10 +8,10 @@ responsive_menu.javascript:
+   version: VERSION
+   js:
+     js/responsive_menu.config.js: {}
+-    /libraries/mmenu/dist/js/jquery.mmenu.all.min.js: {}
++    /libraries/mmenu/dist/jquery.mmenu.all.js: {}
+   css:
+     theme:
+-      /libraries/mmenu/dist/css/jquery.mmenu.all.css: {}
++      /libraries/mmenu/dist/jquery.mmenu.all.css: {}
+   dependencies:
+     - core/jquery
+     - core/drupalSettings
+-- 
+2.1.4
+
