@@ -32,6 +32,7 @@
         "drupal/responsive_menu": "^2.4",
         "drupal/views_infinite_scroll": "^1.5",
         "drupal/views_photo_grid": "^1.0@beta",
+        "drupal/webform": "^5.0@beta",
         "drush/drush": "~8.0",
         "symfony/dom-crawler": "2.8.13",
         "webflo/drupal-finder": "^0.3.0",
