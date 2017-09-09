@@ -22,6 +22,7 @@ $white: #ffffff;
 $purple: #382a3b;
 $grey: #c0bebe;
 $dark_grey: #868686;
+$newspaper: #404040;
 
 ol, ul {
   padding-left: 1.5em;
@@ -32,7 +33,10 @@ ol, ul {
 
 // Page header.
 .page-header {
-  margin-top: 0;
+  margin-top: 35px;
+  padding-left: 20px;
+  border-bottom: none;
+  color: $newspaper;
 }
 
 // Footer.
@@ -91,6 +95,9 @@ body.path-frontpage div#hero {
 body.page-node-type-portfolio-item div#hero {
   background-image: url("../images/brick.jpg");
 }
+body.path-webform div#hero {
+  background-image: url("../images/los_angeles.jpg");
+}
 div#hero {
   background-repeat: no-repeat;
   height: 468px;
@@ -101,6 +108,7 @@ div#hero {
 }
 body {
   margin-top: 0;
+  background-color: #f4f4f4;
 }
 nav#block-mainnavigation a {
   color: $white;
@@ -133,6 +141,10 @@ div.name h2 {
 div.name span,
 div#hero-text h1 {
   color: $white;
+}
+body.path-photography div.name span,
+body.page-node-type-photograph div.name span {
+  color: $newspaper;
 }
 body.page-node-type-portfolio-item div.name span {
   color: $orange;
@@ -311,7 +323,7 @@ section#block-socialmediablock i:hover {
     width: 20%;
   }
   ul.mm-listview li {
-    width: 100%;
+    width: 103%;
     display: block;
   }
   div#off-canvas div#mobile-social {
@@ -432,6 +444,8 @@ div#hero-text h1 {
   font-size: 3.5em;
 }
 div#hero-text .btn,
+form#webform-submission-contact-me-form div#edit-actions button#edit-submit,
+div.view-photography a.button,
 div.view-id-portfolio div.view-footer a,
 section#block-worktogether a.btn {
   background-color: rgba(191, 88, 41, 0.8);
@@ -443,6 +457,8 @@ section#block-worktogether a.btn {
   text-transform: uppercase;
 }
 div#hero-text a:hover,
+form#webform-submission-contact-me-form div#edit-actions button#edit-submit:hover,
+div.view-photography a.button:hover,
 section#block-worktogether a.btn:hover,
 div.field--name-field-visit-website a:hover,
 div.view-id-portfolio div.view-footer a:hover {
@@ -677,7 +693,8 @@ body.page-node-type-portfolio-item div.field--name-body div.field--label {
   font-weight: 400;
   letter-spacing: 2px;
 }
-div.field--name-field-tablet-image img {
+div.field--name-field-tablet-image img,
+body.page-node-type-photograph div.field--name-field-image img {
   margin: 0 auto;
 }
 div.field--name-field-tablet-image,
@@ -818,4 +835,32 @@ div.name a:focus {
   body.page-node-type-portfolio-item div.row div.field--name-body {
     padding-top: 100px !important;
   }
+}
+div.view-photography img:hover {
+  transform:scale(1.25);
+  transition: all 1s ease;
+  position: absolute;
+  z-index: 9999;
+}
+body.path-photography div.main-container,
+#edit-map iframe,
+body.page-node-type-photograph iframe {
+  width: 100% !important;
+}
+body.path-photography section.col-sm-12 {
+  padding: 0 !important;
+}
+form#webform-submission-contact-me-form div#edit-actions {
+  padding: 30px 0;
+}
+div#map-overlay {
+  background-color: $newspaper;
+  opacity: 0.5;
+  height: 450px;
+  margin-bottom: -450px;
+}
+.form-control {
+  border-radius: 0;
+  border: none;
+  resize: none;
 }

@@ -47,6 +47,8 @@
 
                 $(".field--name-body, .field--name-field-tablet-image, .field--name-field-mobile-image, #block-views-block-pager-block-1, #block-worktogether, footer").addClass("hideme");
 
+                $("#edit-map").insertAfter("#webform-submission-contact-me-form #edit-actions");
+
             });
         }
     };
